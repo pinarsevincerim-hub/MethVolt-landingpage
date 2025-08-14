@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MethVolt - Green Methane from Renewable Energy</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #007bff, #00d4ff); /* Blue to light blue gradient */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700 rounded-md p-2">MethVolt</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2">About Us</a>
+                <a href="#technology" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2">Technology</a>
+                <a href="#benefits" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2">Benefits</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 px-4 pb-2">
+            <a href="#about" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2">About Us</a>
+            <a href="#technology" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2">Technology</a>
+            <a href="#benefits" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2">Benefits</a>
+            <a href="#contact" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-6 md:px-10 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 rounded-lg p-2">
+                Powering the Future with Green Methane
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90 rounded-md p-2">
+                MethVolt converts renewable hydrogen and CO2 into storable, cost-effective, and green methane, solving the intermittency challenge of renewable energy.
+            </p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out inline-block">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-6 md:px-10 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700">About MethVolt</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/e0f2fe/007bff?text=Green+Energy+Solution" alt="Green Energy Solution" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed mb-6">
+                        MethVolt is a pioneering startup committed to revolutionizing energy storage. We leverage the well-established **Sabatier reaction** to transform two key components of a sustainable future: **renewable hydrogen** and **carbon dioxide (CO2)**, into **synthetic methane**.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Our core mission is to provide a **modular, cost-effective, and truly green solution** to one of the biggest challenges in renewable energy: its intermittency. Solar and wind power are clean, but their availability fluctuates by time of day or season. Our technology offers a robust way to store this otherwise non-storable energy.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Through rigorous beachhead analysis, we've identified **green hydrogen producers** as our initial market segment. We aim to utilize their excess hydrogen gas as a primary reactant, while sourcing CO2 from nearby industrial facilities or other sustainable alternatives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="py-16 px-6 md:px-10 bg-gray-50">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700">Our Innovative Technology</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Sabatier Reaction Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">The Sabatier Reaction</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        At the heart of our process is the Sabatier reaction ($$\text{CO}_2 + 4\text{H}_2 \rightarrow \text{CH}_4 + 2\text{H}_2\text{O}$$), a chemical process that efficiently converts carbon dioxide and hydrogen into methane and water. This reaction is key to creating a closed carbon loop.
+                    </p>
+                </div>
+                <!-- Catalyst Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Advanced Catalyst System</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We employ a highly efficient **Nickel-based, calcium-containing heterogeneous catalyst**. This specific catalyst formulation is designed to optimize reaction rates and selectivity, ensuring high methane yield and purity.
+                    </p>
+                </div>
+                <!-- Monolithic Reactor Card -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Monolithic Reactor Design</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our chosen **monolithic reactor** design offers significant advantages in terms of heat management, compactness, and scalability. It allows for precise control over the reaction conditions, leading to superior performance and operational stability.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <img src="https://placehold.co/800x300/e0f2fe/007bff?text=Sabatier+Process+Diagram" alt="Sabatier Process Diagram" class="rounded-xl shadow-lg w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 px-6 md:px-10 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700">Why Choose MethVolt?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Solving Intermittency</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Convert excess renewable electricity (via green hydrogen) into a storable, dispatchable fuel, ensuring energy security and grid stability regardless of weather conditions or time of day.
+                    </p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Truly Green Solution</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our process utilizes renewable hydrogen and captured CO2, resulting in a carbon-neutral methane that contributes to a circular economy and significantly reduces greenhouse gas emissions.
+                    </p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Cost-Effective Energy Storage</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Leverage existing gas infrastructure for transport and storage, avoiding the high costs of new dedicated hydrogen pipelines and storage facilities, making long-term energy storage economically viable.
+                    </p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-4">Modular and Scalable</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our modular design allows for flexible deployment at various scales, from small-scale on-site solutions to large industrial applications, adapting to diverse energy needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Market Segment -->
+    <section class="gradient-bg text-white py-16 px-6 md:px-10 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Partner with MethVolt</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                We are actively seeking partnerships with **green hydrogen producers** looking to maximize the value of their excess hydrogen and contribute to a sustainable energy future.
+            </p>
+            <a href="#contact" class="bg-white text-blue-700 hover:bg-gray-100 font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out inline-block">Connect With Us</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-10 bg-gray-50">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-700">Contact Us</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-lg text-center mb-6 text-gray-700">
+                    Interested in learning more about MethVolt or exploring partnership opportunities? Please fill out the form below or reach out to us directly.
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="your.email@example.com">
+                    </div>
+                    <div>
+                        <label for="company" class="block text-gray-700 text-sm font-bold mb-2">Company (Optional)</label>
+                        <input type="text" id="company" name="company" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Company Name">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell us about your interest..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">Send Message</button>
+                    </div>
+                </form>
+                <p class="text-center text-gray-600 text-sm mt-8">
+                    MethVolt is a proud participant in the EIT Community Jumpstarter program.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-10 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2025 MethVolt. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+                <a href="#technology" class="text-gray-400 hover:text-white transition duration-300">Technology</a>
+                <a href="#benefits" class="text-gray-400 hover:text-white transition duration-300">Benefits</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Toggle mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
